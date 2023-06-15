@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Dashboard - NiceAdmin Bootstrap Template</title>
+    <title>Dashboard - Admin Simple App</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -48,7 +48,7 @@
         <div class="d-flex align-items-center justify-content-between">
             <a href="index.html" class="logo d-flex align-items-center">
                 <img src="assets/admin/img/logo.png" alt="">
-                <span class="d-none d-lg-block">NiceAdmin</span>
+                <span class="d-none d-lg-block">Simple Admin</span>
             </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
         </div><!-- End Logo -->
@@ -215,7 +215,7 @@
                     <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#"
                         data-bs-toggle="dropdown">
                         <img src="assets/admin/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-                        <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+                        <span class="d-none d-md-block dropdown-toggle ps-2">{{ Auth::user()->name }}</span>
                     </a><!-- End Profile Iamge Icon -->
 
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
@@ -986,14 +986,14 @@
             class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
-    <script src="assets/admin/apexcharts/apexcharts.min.js"></script>
-    <script src="assets/admin/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/admin/chart.js/chart.umd.js"></script>
-    <script src="assets/admin/echarts/echarts.min.js"></script>
-    <script src="assets/admin/quill/quill.min.js"></script>
-    <script src="assets/admin/simple-datatables/simple-datatables.js"></script>
-    <script src="assets/admin/tinymce/tinymce.min.js"></script>
-    <script src="assets/admin/php-email-form/validate.js"></script>
+    <script src="assets/admin/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/admin/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/admin/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/admin/vendor/quill/quill.min.js"></script>
+    <script src="assets/admin/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/admin/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/admin/vendor/php-email-form/validate.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/admin/js/main.js"></script>

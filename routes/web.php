@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\PortofolioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +19,11 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('admin-page.index');
 })->middleware(['auth'])->name('dashboard');
+
+Route::get('/',[
+    PortofolioController::class, 'index'
+])->name('portofolio');
 
 require __DIR__.'/auth.php';

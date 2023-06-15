@@ -15,7 +15,7 @@
             </a>
             <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="components-alerts.html">
+                    <a href="{{ route('portofolio') }}">
                         <i class="bi bi-circle"></i><span>Alerts</span>
                     </a>
                 </li>
@@ -211,10 +211,15 @@
         </li><!-- End Register Page Nav -->
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="pages-login.html">
-                <i class="bi bi-box-arrow-in-right"></i>
-                <span>Login</span>
-            </a>
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
+                <a href="route('logout')" class="nav-link collapsed"
+                        onclick="event.preventDefault();
+                                    this.closest('form').submit();">
+                                    <i class="bi bi-box-arrow-in-right"></i>
+                    {{ __('Log Out') }}
+                </a>
+            </form>
         </li><!-- End Login Page Nav -->
 
         <li class="nav-item">
