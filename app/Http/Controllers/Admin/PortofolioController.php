@@ -14,7 +14,7 @@ class PortofolioController extends Controller
      */
     public function index()
     {
-        dd('hai');
+        return view('main-page.index');
     }
 
     /**

@@ -14,15 +14,11 @@ use App\Http\Controllers\Admin\PortofolioController;
 |
 */
 
-Route::get('/', function () {
-    return view('main-page.index');
-});
-
 Route::get('/dashboard', function () {
     return view('admin-page.index');
 })->middleware(['auth'])->name('dashboard');
 
-Route::get('/',[
+Route::get('/portofolio',[
     PortofolioController::class, 'index'
 ])->name('portofolio');
 
