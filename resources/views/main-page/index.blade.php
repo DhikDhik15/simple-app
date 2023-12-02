@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Simple App - Index</title>
+    <title>Portal Berita - Index</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -55,7 +55,7 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h2>About Us</h2>
+                    <h2>About Site</h2>
                 </div>
 
                 <div class="row content">
